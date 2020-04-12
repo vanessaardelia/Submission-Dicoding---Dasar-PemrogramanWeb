@@ -1,0 +1,50 @@
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Vanessa Ardelia</title>
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+        <header>
+            <h3>VANESSA ARDELIA</h3>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="html.html">Mengganti Warna</a></li>
+                    <li><a href="html2.html">Menambah tulisan</a></li>
+                </ul>
+            </nav>
+            <a class="contact" href="https://www.linkedin.com/in/vanessa-ardelia-0833801a4/"><button>CONTACT</button></a>
+        </header>
+        <div class="container">
+            <button onclick="tambahTeks()" style="color:#CC2A49;">Tambah Teks</button>
+        </div>
+        <main>
+            <div id="content">
+                <article>
+                    Perkenalkan, saya Vanessa Ardelia yang saat ini sedang duduk di bangku kuliah Universitas Multimedia Nusantara. Alasan saya mengikuti dicoding ini adalah agar saya dapat belajar dan mendalami front-end dan ux dengan lebih baik lagi. Untuk profil lengkap saya, bisa diklik di button contact :)).
+                </article>
+            </div>
+            <aside>
+                <img src="image.jfif" style="width: 50%; padding-bottom: 10px;">
+                <p>Vanessa Ardelia</p>
+                <p style="font-size: 12px;">(Uni Student)</p>
+                <br>
+                <p style="font-size: 12px;">20 years old and an ENFJ-A college student with a great passion for all programmings anddesigns. I intend on working towards a career in the same industry.</p>
+            </aside>
+        </main>
+        <footer>
+            Vanessa Ardelia Layustira - Dicoding Submisson
+        </footer>
+    </body>
+</html>
+
+<script>
+function tambahTeks() {
+    var node = document.createElement("article");          
+    var textnode = document.createTextNode("Teks Baru.");      
+    node.appendChild(textnode);                         
+    document.getElementById("content").appendChild(node);
+}
+</script>
